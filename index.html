@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Management</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .form-section,
+        .result-section {
+            margin: 20px 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Waste Management</h1>
+            <p class="subtitle">Enter your details to check if a bin is available for occupancy.</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Enter Bin Details</h2>
+            <form id="binForm">
+                <div class="form-group">
+                    <label for="device_id">Device ID:</label>
+                    <input type="text" id="device_id" name="device_id" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="timestamp">Timestamp:</label>
+                    <input type="date" id="timestamp" name="date" required >
+                </div>
+                
+                <button type="submit">Check Bin Availability</button>
+            </form>
+        </section>
+        <section class="result-section">
+            <h2>Result</h2>
+            <p id="resultMessage">Please enter the details and submit the form to check the bin availability.</p>
+        </section>
+
+        <footer>
+            <p>© 2024 Smart Waste Management</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "name": "waste-management-function",
+    "version": "1.0.0",
+    "dependencies": {
+      "@google-cloud/bigquery": "^6.0.0"
+    }
+  }
+  
